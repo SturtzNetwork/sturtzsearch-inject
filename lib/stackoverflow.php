@@ -1,4 +1,22 @@
 <?php
+/**
+ * Sturtz Search Version 2.0.*
+ *
+ * PHP version 7.4
+ *
+ * @category Sturtz Search
+ * @package  Inject
+ * @author   Darth Kilroy <darthkilroy@sturtz.io>
+ * @link     https://sturtz.io
+ */
+
+ /**
+ * Redirect `_so $word` to Stack Overflow search
+ *
+ * @param string $word   The query entered
+ *
+ * @return void
+ */
 function injectstack($word) {
     header("Status: 301 Moved Permanently");
     header("Location:https://stackoverflow.com/search?q=".$word);
